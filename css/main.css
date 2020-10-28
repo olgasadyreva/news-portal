@@ -1,0 +1,402 @@
+/*    Новости дня (левая колонка)   */
+
+.main-content {
+  display: flex;
+  padding-top: 21px;
+  padding-bottom: 58px;
+  word-wrap: break-word; /* перенос слова а другую строку, если оно не влезает в блок*/ 
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.news-day { 
+  display: flex;
+  flex-direction: column;
+  width: 24.9%;
+  padding-bottom: 25px;
+  background-color: #fff;
+    
+}
+
+.news-title {
+  display: block;
+  width: 100%;
+  margin: 0;  
+  padding: 25px 18px;
+  border-bottom: 1px solid #e5e5e5;
+  letter-spacing: -0.4px;
+  font-size: 20px;  
+}
+
+.news-day-list {
+  margin: 0;
+  padding: 29px 12px 35px 18px;
+  letter-spacing: 0.35px;  
+}
+
+  .news-day-item {
+    margin-bottom: 20px; 
+    list-style: none;
+  }
+
+  .news-day-item:last-child {
+      margin-bottom: 0;    
+    }
+
+    .article-title {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .news-link {
+      font-weight: normal;
+    }
+
+    .news-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      letter-spacing: -0.32px;
+    }
+
+      .news-category {
+        display: inline-block;
+        color: #91919f;
+        opacity: .8;        
+      }        
+
+        .news-category::before {
+          content: "/ ";           
+        }
+
+        .wrap-comments-time {
+          margin-right: 26px;
+        }
+       
+      .news-time {        
+        padding-left: 15px;
+        margin-right: 16px;
+        background: url("../img/icons/icon-time.png") 0 0 no-repeat;
+      }
+
+      .news-comments {
+        padding-left: 16px;        
+        background: url("../img/icons/icon-comments.png") 0 2px no-repeat;
+      }
+
+  .all-news {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 50px;   
+    border: 1px solid #448ccb;
+    border-radius: 23px;
+    color: #448ccb;    
+    letter-spacing: -0.32px;
+    text-align: center;
+  }
+
+
+/*    Главные новости (центральная колонка)   */
+
+.news-main {
+  width: 463px;  
+}
+  
+  .news-main .news-link {
+    font-weight: bold;
+  }
+
+  .first-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 23.76% 17.278% 8.21% 4.319%;
+    color: #fff;
+    background-color: #014670;    /*фон под картинкой, если она не загрузится*/    
+  }
+
+    .first-news-photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+
+    .first-category {
+      position: relative;   /*явно указала позиционирование, чтобы заработал z-index*/
+      display: block;
+      margin-bottom: 17px;      
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.32px;
+      z-index: 1;
+    }
+
+    .first-category:before {
+      content:"/ ";
+    }
+
+    .first-title {
+      position: relative;      /*явно указала позиционирование, чтобы заработал z-index*/
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 2.143em;
+      letter-spacing: -0.6px;
+      line-height: 34px;
+      z-index: 1;
+    }   
+
+    .first-datetime {
+      position: relative;    /*явно указала позиционирование, чтобы заработал z-index*/
+      font-size: 0.857em;
+      letter-spacing: -0.32px;
+      z-index: 1;
+    }
+
+    .first-date {
+      margin-right: 15px;
+      background: transparent;
+    }
+
+    .first-time {
+      padding-left: 15px;
+      background: url("../img/icons/icon-time-white.png") 3px 2px no-repeat;
+    }
+
+  .news-wrapper { 
+    width: 463px;  
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }  
+
+    .news-main-item {
+      margin-bottom: 15px;
+      min-height: 240px; /* если текста будет больше, чем три строки, чтобы блок растянулся по высоте*/
+      list-style: none;
+    }
+
+      .news-main-item:nth-last-child(1),
+      .news-main-item:nth-last-child(2) {
+        margin-bottom: 0;
+      } 
+
+    .news-photo {
+      object-fit: cover;
+      height: 144px;
+      margin-bottom: -3px;     
+    }
+
+      .article-main-title {
+        min-width: 160px;
+        max-width: 200px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: -0.32px;
+      }
+      
+
+      .main-category {
+        display: inline-block;
+        color: #91919f;
+        opacity: .8; 
+      }
+
+      .main-category::before {
+          content: "/ ";
+        }
+
+      .main-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        letter-spacing: -0.32px;
+      }  
+
+     
+      .main-comments-time{
+        margin-right: 26.9%;
+      }  
+
+      .main-time {
+        padding-left: 15px;
+        margin-right: 16px;
+        background: url("../img/icons/icon-time.png") 0 0 no-repeat;
+      }
+
+      .main-comments {
+        padding-left: 16px;        
+        background: url("../img/icons/icon-comments.png") 0 center no-repeat;
+      }
+
+    
+
+
+/*    Секция "Самые читаемые новости"   */
+
+.special-news {
+  padding-top: 20px;
+  clear: both; 
+}
+
+  .special-first-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    float: left;
+    max-width: 588px;
+    width: 100%;    
+    padding: 103px 85px 44px 20px;
+    margin-bottom: 0;
+    margin-right: 0;
+    color: #fff;
+    background-color: #0e1729;  /*фон под картинкой, если она не загрузится*/    
+  }
+
+    .special-first-photo {     
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;       
+    }
+
+     
+      .special-first-category {
+        position: relative;  /*явно указала позиционирование, чтобы заработал z-index*/
+        display: inline-block;
+        margin-bottom: 20px;      
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.32px;
+        z-index: 1;
+      }
+
+      .special-first-category:before {
+        content:"/ ";
+      }
+
+      .special-first-title {
+        position: relative;  /*явно указала позиционирование, чтобы заработал z-index*/
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-right: 90px;
+        font-size: 30px;
+        letter-spacing: -0.6px;
+        line-height: 34px;
+        z-index: 1;
+              
+      }
+
+      .special-first-datetime {
+        position: relative;  /*явно указала позиционирование, чтобы заработал z-index*/
+        display: inline-block;
+        margin-bottom: 18px;
+        font-size: 12px;
+        z-index: 1;
+      }
+
+        .special-first-date {
+          margin-right: 15px;
+          background: transparent; 
+        } 
+
+        .special-first-time {
+          padding-left: 15px;
+          background: url("../img/icons/icon-time-white.png") 3px 2px no-repeat;
+        }
+    
+      .special-news-text {
+        margin: 0;
+        letter-spacing: -0.28px;
+        opacity: .7;        /*z-index здесь не нужен, так как прозрачность меньше 1*/
+      }
+      
+
+  .special-news-title {
+    float: right;
+    width: 41.2%;
+    margin: 0;
+    padding: 27px 20px;
+    font-size: 20px;      
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    letter-spacing: -0.4px;
+  }
+
+  .special-news-wrapper {
+    float: right;  
+    background-color: #fff;
+    width: 41.2%;
+    min-height: 318px;
+  }
+      
+
+    .special-news-list {
+      margin: 0;
+      padding: 24px 20px;
+    }
+
+    .special-news-item {
+      margin-bottom: 24px;
+      list-style: none;
+      letter-spacing: 0.76px;
+    }
+
+      .special-news-item:last-child {
+        margin-bottom: 0;
+      }
+
+    .special-article-title {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      padding: 0;
+      line-height: 22px;
+    }
+
+    .special-category {
+      display: inline-block;
+      color: #91919f;
+      opacity: .8; 
+    }
+
+      .special-category::before {
+        content: "/ ";
+      }
+
+    .special-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      letter-spacing: -0.32px;
+    }
+
+    .special-news-link {
+      font-weight: bold;
+    }
+
+     
+    .special-comments-time {
+      float: right;
+      margin-right: 21%;
+    }
+
+      .special-time {
+        padding-left: 15px;
+        margin-right: 16px;
+        background: url("../img/icons/icon-time.png") 0 0 no-repeat;
+      }
+
+      .special-comments {
+        padding-left: 16px;
+        background: url("../img/icons/icon-comments.png") 0 2px no-repeat;
+      }

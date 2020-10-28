@@ -1,0 +1,156 @@
+.footer {
+  padding-top: 48px;
+  background-color: #00122f;
+  color: #fff;
+}
+
+.footer .container {
+  position: relative;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+  .footer-nav {
+    width: 26.5%;
+    margin-top: 5px;
+    letter-spacing: 0.8px;
+  }
+
+  .menu-footer {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+    .menu-footer-item {
+      margin-bottom: 13px;
+    }
+   
+
+  .footer-info {
+    margin-top: 10px;
+  }
+
+    .logo-footer {
+        margin-bottom: 11px;     
+      }
+    
+
+    .menu-footer-center {
+      margin: 0;
+      padding-left: 4px;
+      list-style-type: none;
+      letter-spacing: 0.9px;
+    }
+
+    .menu-center-item {
+      margin-bottom: 13px;
+    }
+
+    .menu-center-item:last-child {
+      margin-bottom: 0;
+    }
+      
+
+
+.footer-contacts {
+    width: 230px; /* добавила ширину, чтобы иконки, если их много, выстраивались в два ряда*/
+    margin-top: 8px;
+  }
+
+  .social {
+    display: inline-block;
+    margin-bottom: 33px;  
+    width: 100%;
+  }
+
+    .social-list {      
+      padding-left: 5px;
+      margin: 0;
+    }  
+
+      .social-item {
+        display: inline-block;
+        margin-left: 4.8%;
+        font-size: 0;             
+       }
+
+      .social-item:nth-child(4n+1) { /* иконки выстраиваются по четыре вряд, убирается отступ слева у первого, пятого, девятого ...*/
+        margin-left: 0;
+      }
+
+        .social-icon {
+          display: block;
+          width: 44px;
+          height: 44px;
+        }
+
+        .vk {
+          background-image: url("../img/icons/icon-vk.png");
+         }
+
+        .facebook {
+          background-image: url("../img/icons/icon-facebook.png");
+        }
+
+        .twitter {
+          background-image: url("../img/icons/icon-twitter.png");
+        }
+
+        .instagram {
+          background-image: url("../img/icons/icon-instagram.png");
+        }
+
+
+  .contact {
+    letter-spacing: -0.32px;
+  }
+
+  .contact-list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }  
+
+  .contact-item {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 40px;
+    font-size: 18px;    
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .contact-item:nth-child(1) {    
+    background-image: url("../img/icons/icon-tel.png");   
+    background-size: 18px 18px;
+    background-position: 3px 0;
+    
+  }
+
+  .contact-item:nth-child(2) {    
+    background-image: url("../img/icons/icon-email.png");
+    background-size: 13px 11px;
+    background-position: 8px 5px;
+  }
+
+  .contact-item:last-child {
+    margin-bottom: 0;
+  }
+
+
+/*    Копирайт    */
+
+.copyright {
+  margin: 0;
+  padding: 15px 0;  
+  text-align: center;
+  letter-spacing: -0.28px;
+  color: rgba(255,255,255,.4);
+  border-top: 1px solid rgba(255,255,255,.15);
+}

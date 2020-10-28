@@ -1,0 +1,27 @@
+/*    Правая колонка (блок с баннерами)   */
+
+.banners {
+  width: 25%;
+  background-color: #f9f9f9;
+}
+
+.banners-list {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .banner-item {
+    margin-bottom: 20px;
+  }
+
+  .banner-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .banner-img {
+    display: block;
+  }

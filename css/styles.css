@@ -1,0 +1,62 @@
+/*Свойства width и height включают в себя значения padding и border*/
+html {
+  box-sizing: border-box;    
+}
+
+/*Псевдоэлементы наследуют box-sizing от родителя*/
+*,
+::before,
+::after {
+  box-sizing: inherit;    
+}
+
+/*Базовые настройки всей страницы*/
+body {
+	margin: 0;
+	font: 14px/20px "Arial", sans-serif;
+	color: #000;
+	background-color: #f9f9f9;
+  overflow-x: hidden;  
+}
+
+/*Отключение скролла на body при открытии модального окна*/
+body.modal-active {
+	overflow: hidden;
+}
+
+/*Максимальная ширина всех картинок 100%, чтобы картинки не растягивались по всей ширине блока*/
+img {
+	max-width: 100%;     
+}
+
+/* цвет ссылки наследуется от родителя, убирается подчеркивание */
+a {
+  text-decoration: none;
+  color: inherit;  
+}
+
+/* служебный класс для скрытия важного элемента на странице */
+.visually-hidden {        
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+/* Элемент после класса clearfix, убирает float*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Стили для контейнера, центральной части страницы, ширина и центрирование */	
+.container {
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 0 auto;
+}

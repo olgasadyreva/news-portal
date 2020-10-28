@@ -1,0 +1,63 @@
+@media (max-width: 767px) {
+.no-js .header-wrapper {
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 10px 25px;        
+  }
+
+.no-js .header-burger {
+  display: none;    
+}
+
+.no-js .header-logo {
+    margin: 10px auto;    
+}
+
+.no-js .header-info {
+  display: none;
+}
+
+  .no-js .header-search { 
+    order: -1;     /* теперь работает  */
+  }
+
+  .no-js .search {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 13px 50px 12px 21px;        
+  }
+
+  .no-js .search-submit {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+  }
+
+  .no-js .menu-list {
+    width: 100%;
+    display: block;
+    padding: 0px 22px 100px 22px;
+    margin: 0;
+    font-size: 18px;
+    opacity: 1;
+    z-index: 10;
+    background-color: #fff;    
+  }
+
+  .no-js .menu-list .menu-item::after {          
+    display: none;
+  }
+
+  .no-js .menu-list .menu-item {
+    display: block;
+    margin: 0;
+    padding: 10px 0;          
+    letter-spacing: -0.46px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .no-js .menu-list .menu-item:last-child {
+    border: none; 
+  }
+}
